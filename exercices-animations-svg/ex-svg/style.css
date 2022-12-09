@@ -144,4 +144,109 @@ figure {
     max-height:40%;
 }
 
+
+#eq1-1 , #eq2-1 , #eq3-1 , #eq4-1 {
+    animation-name : firstLine;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes firstLine {
+    from {
+        fill : rgba(0,0,0,0)
+    }
+
+    to {
+        fill: #7400b8
+    }
+}
+
+
+#eq1-2, #eq2-2 , #eq3-2, #eq4-2 {
+    animation-name : secondLine;
+    animation-delay: 2.25s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes secondLine {
+    from {
+        fill : rgba(0,0,0,0)
+    }
+
+    to {
+        fill: #5e60ce
+    }
+}
+
+
+#eq1-3, #eq2-3, #eq3-3 {
+    animation-name : thirdLine;
+    animation-delay: 2.50s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes thirdLine {
+    from {
+        fill : rgba(0,0,0,0)
+    }
+
+    to {
+        fill : #4ea8de
+    }
+}
+
+#eq2-4 , #eq3-4 {
+    animation-name : fourthLine;
+    animation-delay: 2.75s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fourthLine {
+    from {
+        fill:rgba(0,0,0,0);
+    }
+
+    to {
+        fill:#56cfe1;
+    }
+}
+
+#eq2-5 {
+    animation-name : fifthLine;
+    animation-delay: 3s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes fifthLine {
+    from {
+        fill:rgba(0,0,0,0);
+    }
+
+    to {
+        fill:#72efdd;
+    }
+}
+
+
 /* EXERCICE 4 */
+
+
+.st23 {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

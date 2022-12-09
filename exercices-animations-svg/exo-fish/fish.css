@@ -1,0 +1,166 @@
+/* ANIMATION BULLES */
+
+
+.st2-tiny {
+    animation-name : tiny;
+    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-fill-mode: backwards;
+    animation-iteration-count:infinite;
+}
+
+.st2-little {
+    animation-name : little;
+    animation-delay: 1s;
+    animation-duration: 5s;
+    animation-fill-mode: backwards;
+    animation-iteration-count:infinite;
+}
+
+.st2-medium {
+    animation-name : medium;
+    animation-delay: 1s;
+    animation-duration: 7s;
+    animation-fill-mode: backwards;
+    animation-iteration-count:infinite;
+}
+
+
+.st2-mediumL {
+    animation-name : mediumL;
+    animation-delay: 1s;
+    animation-duration: 8s;
+    animation-fill-mode: backwards;
+    animation-iteration-count:infinite;
+}
+
+.st2-mediumXL {
+    animation-name : mediumXL;
+    animation-delay: 1s;
+    animation-duration: 10s;
+    animation-fill-mode: backwards;
+    animation-iteration-count:infinite;
+}
+
+.st2-mediumXXL {
+    animation-name : mediumXXL;
+    animation-delay: 1s;
+    animation-duration: 12s;
+    animation-fill-mode: backwards;
+    animation-iteration-count:infinite;
+}
+
+.st2-big {
+    animation-name : big;
+    animation-delay: 1s;
+    animation-duration: 15s;
+    animation-fill-mode: backwards;
+    animation-iteration-count:infinite;
+}
+
+
+
+@keyframes tiny {
+
+    from {
+        transform:translateY(0);
+    }
+    to {
+        transform:translateY(-90vh);
+    }
+}
+
+@keyframes little {
+
+    from {
+        transform:translateY(0);
+    }
+    to {
+        transform:translateY(-90vh);
+    }
+}
+
+@keyframes medium {
+
+    from {
+        transform:translateY(0);
+    }
+    to {
+        transform:translateY(-90vh);
+    }
+}
+
+@keyframes mediumL{
+
+    from {
+        transform:translateY(0);
+    }
+    to {
+        transform:translateY(-90vh);
+    }
+}
+
+@keyframes mediumXL {
+
+    from {
+        transform:translateY(0);
+    }
+    to {
+        transform:translateY(-90vh);
+    }
+}
+
+@keyframes mediumXXL {
+
+    from {
+        transform:translateY(0);
+    }
+    to {
+        transform:translateY(-90vh);
+    }
+}
+
+
+@keyframes big {
+
+    from {
+        transform:translateY(0);
+    }
+    to {
+        transform:translateY(-90vh);
+    }
+}
+
+
+/* ANIMATION POISSON */
+
+
+.st3 {
+    animation-name : fish;
+    animation-delay: 1s;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count:infinite;
+    transform-origin: 60% 40%;
+}
+
+
+@keyframes fish {
+    50% {
+        transform:translateX(-60vw);
+    }
+
+    51% {
+        transform:rotate(0.5turn) translateX(60vw);
+    }
+
+    100% {
+        transform:translateX(60vw) rotate(0.5turn);
+    }
+
+
+
+
+}
+
+
