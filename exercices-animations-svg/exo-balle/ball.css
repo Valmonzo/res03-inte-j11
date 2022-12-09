@@ -3,19 +3,87 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -23,33 +91,205 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
+
 body {
 	line-height: 1;
+	height: 100vh;
+	display:grid;
+	grid-template-columns: repeat(3, 1fr);
 }
-ol, ul {
+
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
 
 
-img {
-    height:200px;
-    width:200px;
-    background: url("ball-1.svg");
+#b1 {
+	height: 150px;
+	width: 150px;
+	animation-name: ball;
+	animation-delay: 1s;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+	justify-self:center;
+}
+
+#b2 {
+	height: 150px;
+	width: 150px;
+	animation-name: ball;
+	animation-delay: 1.3s;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+	justify-self:center;
+}
+
+#b3 {
+	height: 150px;
+	width: 150px;
+	animation-name: ball;
+	animation-delay: 1.6s;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+	justify-self:center;
+}
+
+
+
+section {
+	height: 15vh;
+	background: linear-gradient(0deg, rgba(60,195,34,1) 27%, rgba(170,253,45,1) 92%);
+	margin-top: 30Vh;
+	grid-column:1/4;
+	grid-row:2/3;
+}
+
+
+@keyframes ball {
+	0% {
+		background: url("ball-1.svg");
+	}
+
+	20% {
+		background: url("ball-1.svg");
+		transform: translateY(50vh);
+	}
+
+	22% {
+		background: url("ball-2.svg");
+		transform: translateY(52vh);
+	}
+
+	24% {
+		background: url("ball-3.svg");
+		transform: translateY(54vh);
+	}
+
+
+	26% {
+		background: url("ball-4.svg");
+		transform: translateY(56vh);
+	}
+
+	28% {
+		background: url("ball-5.svg");
+		transform: translateY(58vh);
+	}
+
+	30% {
+		background: url("ball-6.svg");
+		transform: translateY(60vh)
+	}
+
+	32% {
+		background: url("ball-7.svg");
+		transform: translateY(62vh);
+	}
+
+	34% {
+		background: url("ball-8.svg");
+		transform: translateY(64vh);
+	}
+
+	36% {
+		background: url("ball-9.svg");
+		transform: translateY(66vh);
+	}
+
+
+	38% {
+		background: url("ball-10.svg");
+		transform: translateY(68vh);
+	}
+
+	40% {
+		background: url("ball-11.svg");
+		transform: translateY(70vh);
+	}
+
+	42% {
+		background: url("ball-10.svg");
+		transform: translateY(68vh);
+	}
+	44% {
+		background: url("ball-9.svg");
+		transform: translateY(66vh);
+	}
+	46% {
+		background: url("ball-8.svg");
+		transform: translateY(64vh);
+	}
+	48% {
+		background: url("ball-7.svg");
+		transform: translateY(62vh);
+	}
+	50% {
+		background: url("ball-6.svg");
+		transform: translateY(60vh)
+	}
+	52% {
+		background: url("ball-5.svg");
+		transform: translateY(58vh);
+	}
+
+	54% {
+		background: url("ball-4.svg");
+		transform: translateY(56vh);
+	}
+	56% {
+		background: url("ball-3.svg");
+		transform: translateY(54vh);
+	}
+	58% {
+		background: url("ball-2.svg");
+		transform: translateY(52vh);
+	}
+	60% {
+		background: url("ball-1.svg");
+		transform: translateY(50vh);
+	}
+
+		100% {
+		background: url("ball-1.svg");
+	}
+
+
 }
